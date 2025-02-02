@@ -9,8 +9,8 @@ class Config(BaseSettings):
     app: str = 'bs://sample.app'
     browser_platform: Literal['android', 'ios'] = 'android'
     timeout: float = 4.0
-    user_name: str = ''  # Убрал из общего доступа
-    access_key: str = '' # Убрал из общего доступа
+    user_name: str = 'bsuser_9ztCr6'
+    access_key: str = 'mvq9ER7oWHLWipc5V6m3'
 
 
 config = Config(_env_file=Path(tests.__file__).parent.parent.joinpath('.env').absolute())
